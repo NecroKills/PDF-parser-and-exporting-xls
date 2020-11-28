@@ -44,7 +44,6 @@ header("Content-Type: application/vnd.ms-excel;");
 header("Content-Disposition: attachment; filename=\"$filename\"");
 header('Content-Encoding: UTF-8');
 header('Content-type: text/csv; charset=UTF-8');
-header('Content-Disposition: attachment; filename=Customers_Export.csv');
 echo "\xEF\xBB\xBF"; // UTF-8 BOM
 
 ExportFile($data);
